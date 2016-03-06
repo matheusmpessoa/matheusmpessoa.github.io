@@ -1,0 +1,108 @@
+/* BODY */
+    body{
+        font-family: 'Asap', sans-serif;
+    }
+
+/* HOME */
+    .home .jumbotron{
+        
+    }
+    .home nav{
+        background-color: #b0db64;    /* Green */
+    }
+
+/* ABOUT */
+    .about .jumbotron{
+
+    }
+    .about nav{
+        background-color: #ff322e;    /* Red */
+    }
+    .about a{
+        color: #ff8282;    /* Red */
+    }
+
+/* PORTFOLIO */
+    .portfolio .jumbotron ul li a{
+        
+    }
+    .portfolio nav{
+        background-color: #ff9900;    /* Orange */
+    }
+
+/* CONTACT */
+    .contact input.ng-invalid.ng-dirty{
+        border: 1px solid #ff8282;    /* Red */
+        background-color: #ffc8c8;    /* Red */
+    }
+    .contact form{
+        font-size: 0.8em;
+        padding-bottom: 10px;
+        
+    }
+    .contact form input{
+        height: 40px;
+        width: 40%;
+    }
+    .contact nav{
+        background-color: #c381de;    /* Green */
+    }
+    .contact div ul a{
+        padding: 5px;
+    }
+
+/* DEFINITION CONTAINER */
+    .container .jumbotron {
+        background-color: #ecf0f1;    /* White */
+        /* #001f3f Navy */
+        /* #b0db64 Green */
+        /* #222 Black */
+        /* #ff9900 Orange */
+        /* #ecf0f1 White */
+        /* #4E9AC1 Blue */
+        /* #ff8282 Red */
+
+    }
+    .container nav i{
+        color: #222;    /* Black */
+    }
+    .container .jumbotron i{
+        color: #4E9AC1;    /* Blue */
+    }
+    .container h1{
+        color: #444; /* Gray */
+        padding-bottom: 10px;
+    }
+    .container h2{
+        color: #444; /* Gray */
+    }
+    .container p{
+        color: #222;    /* Black */
+        font-size: 0.8em;
+        /* #001f3f Navy */
+    }
+    .container a{
+        color: #4e9ac1;    /* Blue */
+        text-decoration: none;
+    }
+    .container footer{
+        background-color: #ecf0f1;    /* White */
+    }
+
+ 
+/* KEYFRAMES */
+@keyframes cd-bounce-1 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+ 
+  60% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+ 
+  100% {
+    transform: scale(1);
+  }
+}

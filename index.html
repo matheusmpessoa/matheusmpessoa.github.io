@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="myApp"><!-- definição do angular app -->
+
+<head>
+    <title>Matheus Pessoa</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- API -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <!-- CSS -->
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <!-- JS -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/angular.js"></script>
+    <!-- Clipboard.js API -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.5/clipboard.min.js"></script>
+    <!-- Google Web Fonts - Asap -->
+        <link href='https://fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css'>
+    <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+        <script src="https://cdn.rawgit.com/lodash/lodash/3.0.1/lodash.min.js"></script>
+    <!-- Sweetalert -->
+        <script src="js/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="js/sweetalert/dist/sweetalert-dev.js"></script>
+        <link rel="stylesheet" href="js/sweetalert/dist/sweetalert.css" type="text/css">
+</head>
+
+<!-- definição do controller -->
+<body ng-controller="mainController">
+    <div class="container">
+        <main id="main">
+            <!-- template do Angular-->
+            <!-- local aonde conteudo sera inserido -->
+            <div ng-view></div>
+        </main>
+        <footer class="text-center">
+            <div class="well well-sm">
+                <span ng-bind="footer"></span><i><span ng-bind="name"></span></i>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Include library clipboard.js -->
+        <script src="js/clipboard/dist/clipboard.min.js"></script>
+    <!-- Instancia do clipboard passando uma string como seletor -->
+        <script>
+            var clipboard = new Clipboard('.btn');
+            clipboard.on('success', function (e) {
+                console.log(e);
+            });
+            clipboard.on('error', function (e) {
+                console.log(e);
+            });
+        </script>
+</body>
+</html>

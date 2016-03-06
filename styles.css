@@ -4,28 +4,25 @@
     }
 
 /* HOME */
-    .home .jumbotron{
-        
-    }
     .home nav{
         background-color: #b0db64;    /* Green */
     }
 
 /* ABOUT */
-    .about .jumbotron{
-
-    }
     .about nav{
         background-color: #ff322e;    /* Red */
     }
     .about a{
         color: #ff8282;    /* Red */
     }
+    .about .list-group ul li{
+        width: 30%;
+        height: 35%;
+        font-size: 0.7em;
+        padding-bottom: 4px;
+    }
 
 /* PORTFOLIO */
-    .portfolio .jumbotron ul li a{
-        
-    }
     .portfolio nav{
         background-color: #ff9900;    /* Orange */
     }
@@ -61,7 +58,6 @@
         /* #ecf0f1 White */
         /* #4E9AC1 Blue */
         /* #ff8282 Red */
-
     }
     .container nav i{
         color: #222;    /* Black */

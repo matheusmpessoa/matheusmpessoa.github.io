@@ -13,8 +13,8 @@ myApp.config(function ($routeProvider) {
         })
 
         // route para a pagina about
-        .when('/about', {
-            templateUrl : 'pages/about.html',
+        .when('/sobre', {
+            templateUrl : 'pages/sobre.html',
             controller  : 'aboutController'
         })
         
@@ -25,8 +25,8 @@ myApp.config(function ($routeProvider) {
         })
 
         // route para a pagina contact
-        .when('/contact', {
-            templateUrl : 'pages/contact.html',
+        .when('/contato', {
+            templateUrl : 'pages/contato.html',
             controller  : 'contactController'
         })
         
@@ -45,40 +45,6 @@ myApp.controller('mainController', function ($scope) {
     $scope.name = 'Matheus Pessoa';
 });
 
-myApp.controller('aboutController', function ($scope) {
-    $scope.message = 'About page.';
-});
-
-myApp.controller('portfolioController', function ($scope) {
-    $scope.message = 'Portfolio page.';
-});
-
-myApp.controller('contactController', function ($scope) {
-    $scope.message = 'Contato';
-});
-
-myApp.controller('otherController', function() {
-    var mp = this;
-    
-    mp.itens = [
-        {name: 'Item1'},
-        {name: 'Item2'},
-        {name: 'Item3'},
-        {name: 'Item4'},
-    ];
-    
-    mp.addTeam = function() {
-        mp.itens.push({name: mp.inputMenu});
-        mp.inputMenu = null;
-    }
-    
-     vm.removeIten = function(menu) {
-        if (confirm("Você realmente deseja deletar este item?")){
-            var index = mp.itens.indexOf(menu);
-            mp.itens.splice(index, 1);
-        }
-    }
-});
 
 // ---------- SWEETCOPY ----------
 function copyCtrl($scope) {
@@ -87,10 +53,10 @@ function copyCtrl($scope) {
     };
 }
 function sweetCopy() {
-    swal({   
-        title: "<h1><i class='fa fa-clipboard fa-fw''></i></h1>",
-        text: "<p>Mensagem copiada para área de transferência</p>",
-        timer: 1000,
+    swal({
+        title: "<p><img src='img/icon/dollynho.jpg'></p>",
+        text:  "<p>Mensagem copiada para área de transferência</p>",
+        timer: 1500,
         html: true,
         showConfirmButton: false
     });

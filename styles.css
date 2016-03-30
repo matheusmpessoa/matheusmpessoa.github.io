@@ -15,16 +15,28 @@
     .about a{
         color: #ff8282;    /* Red */
     }
-    .about .list-group ul li{
-        width: 30%;
-        height: 35%;
-        font-size: 0.7em;
+    .about ul li{
+        width: 100%;
+        font-size: 0.8em;
         padding-bottom: 4px;
+    }
+    .about div h4{
+        text-decoration: underline;
+        margin-left: 5px;
+    }
+    .about div p{
+        margin: 0px 0px 15px 15px;
     }
 
 /* PORTFOLIO */
     .portfolio nav{
         background-color: #ff9900;    /* Orange */
+    }
+    .portfolio .list-group ul li{
+        width: 25%;
+        height: 35%;
+        font-size: 0.8em;
+        padding-bottom: 4px;
     }
 
 /* CONTACT */

@@ -32,9 +32,8 @@
     .portfolio nav{
         background-color: #ff9900;    /* Orange */
     }
-    .portfolio .list-group ul li{
-        width: 25%;
-        height: 35%;
+    .portfolio ul li{
+        width: 100%;
         font-size: 0.8em;
         padding-bottom: 4px;
     }

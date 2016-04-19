@@ -37,6 +37,18 @@
         font-size: 0.8em;
         padding-bottom: 4px;
     }
+    .portfolio div h2{
+        margin-left: 5px;
+        font-size: 1em;
+    }
+    .portfolio div h3{
+        text-decoration: underline;
+        margin-left: 5px;
+        font-size: 0.9em;
+    }
+    .portfolio div p{
+        margin: 0px 0px 15px 15px;
+    }
 
 /* CONTACT */
     .contact input.ng-invalid.ng-dirty{

@@ -1,17 +1,68 @@
 /* BODY */
-    body{
-        font-family: 'Asap', sans-serif;
-    }
+body{
+    font-family: 'Asap', sans-serif;
+}
+
+/* NAV */
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font:15px/1.3 'Open Sans', sans-serif;
+	color: #5e5b64;
+}
+
+header{
+    text-align: right;
+}
+
+footer{
+    text-align: center;
+}
+
+a, a:visited {
+	outline:none;
+	color:#389dc1;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+section, footer, header, aside, nav{
+	display: block;
+}
+
+nav{
+	display:inline-block;
+	margin:0px auto 15px;
+	background-color:#4E9AC1;
+	box-shadow:0 1px 1px #ccc;
+	border-radius:2px;
+}
+
+nav a{
+	display:inline-block;
+	padding: 18px 30px;
+	color:#fff !important;
+	font-weight:bold;
+	font-size:14px;
+	text-decoration:none !important;
+	line-height:1;
+	text-transform: uppercase;
+	background-color:transparent;
+
+	-webkit-transition:background-color 0.25s;
+	-moz-transition:background-color 0.25s;
+	transition:background-color 0.25s;
+}
 
 /* HOME */
-    .home nav{
-        background-color: #b0db64;    /* Green */
-    }
+
 
 /* ABOUT */
-    .about nav{
-        background-color: #ff322e;    /* Red */
-    }
     .about a{
         color: #ff8282;    /* Red */
     }
@@ -29,9 +80,6 @@
     }
 
 /* PORTFOLIO */
-    .portfolio nav{
-        background-color: #ff9900;    /* Orange */
-    }
     .portfolio ul li{
         width: 100%;
         font-size: 0.8em;
@@ -64,9 +112,6 @@
         height: 40px;
         width: 40%;
     }
-    .contact nav{
-        background-color: #c381de;    /* Green */
-    }
     .contact div ul a{
         padding: 5px;
     }
@@ -75,15 +120,13 @@
     .container .jumbotron {
         background-color: #ecf0f1;    /* White */
         /* #001f3f Navy */
-        /* #b0db64 Green */
+        /* #b0db64 Green Android */
         /* #222 Black */
         /* #ff9900 Orange */
         /* #ecf0f1 White */
         /* #4E9AC1 Blue */
         /* #ff8282 Red */
-    }
-    .container nav i{
-        color: #222;    /* Black */
+        /* #55B460 Green */
     }
     .container .jumbotron i{
         color: #4E9AC1;    /* Blue */
@@ -104,24 +147,3 @@
         color: #4e9ac1;    /* Blue */
         text-decoration: none;
     }
-    .container footer{
-        background-color: #ecf0f1;    /* White */
-    }
-
- 
-/* KEYFRAMES */
-@keyframes cd-bounce-1 {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
- 
-  60% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
- 
-  100% {
-    transform: scale(1);
-  }
-}

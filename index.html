@@ -6,48 +6,34 @@
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="icon" type="image/ico" href="/img/icon/rocket.png">
 
-    <!-- API -->
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.css" />
     <!-- CSS -->
         <link rel="stylesheet" href="styles.css" type="text/css">
         <link rel="stylesheet" href="css/animate.css" type="text/css">
-    <!-- JS -->
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-        <script src="js/script.js"></script>
-        <script src="js/angular.js"></script>
-    <!-- Clipboard.js API -->
-        <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.5/clipboard.min.js"></script>
-    <!-- Google Web Fonts - Asap -->
-        <link href='https://fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css'>
     <!-- Sweetalert -->
-        <script src="js/sweetalert/dist/sweetalert.min.js"></script>
-        <script src="js/sweetalert/dist/sweetalert-dev.js"></script>
-        <link rel="stylesheet" href="js/sweetalert/dist/sweetalert.css" type="text/css">
+        <link rel="stylesheet" href="js/sweetalert/sweetalert.css" type="text/css">
 </head>
 
 <!-- definição do controller -->
 <body ng-controller="mainController">
     <div class="container">
-        <main id="main">
-            <!-- template do Angular-->
-            <!-- local aonde conteudo sera inserido -->
-            <div ng-view></div>
-        </main>
-        <footer class="text-center">
-            <div class="well well-sm">
-                <span ng-bind="footer"></span>
-                <a href="https://github.com/matheusmpessoa" target="_blank">
-                    <i><span ng-bind="name"></span></i>
-                </a>
-            </div>
-        </footer>
+        <div my-header></div>
+        <div ng-view></div>
+        <div my-footer></div>
     </div>
 
-    <!-- Library clipboard.js -->
-        <script src="js/clipboard/dist/clipboard.min.js"></script>
-    <!-- Inicia a variavel, e aponta para o botao clicado, dispara o evento -->
+    <!-- Scripts -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+        <script src="js/script.js"></script>
+    <!-- FortAwesome -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.css" />
+    <!-- Sweetalert -->
+        <script src="js/sweetalert/sweetalert.min.js"></script>
+        <script src="js/sweetalert/sweetalert-dev.js"></script>
+    <!-- Clipboard.js -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.5/clipboard.min.js"></script>
+        <!-- Inicia a variavel, e aponta para o botao clicado, dispara o evento -->
         <script>
             var clipboard = new Clipboard('.btn');
         </script>

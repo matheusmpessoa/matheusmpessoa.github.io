@@ -36,6 +36,33 @@ myApp.config(function ($routeProvider) {
         });
 });
 
+// ---------- DIRECTIVE ----------
+myApp.directive("myHeader", function () {
+    var linkFunction = function (scope, element, attributes) {
+        scope.text = attributes["myHeader"];
+    };
+
+    return {
+        restrict: "A",
+        templateUrl: 'pages/header.html',
+        link: linkFunction,
+        scope: {}
+    };
+});
+
+myApp.directive("myFooter", function () {
+    var linkFunction = function (scope, element, attributes) {
+        scope.text = attributes["myFooter"];
+    };
+
+    return {
+        restrict: "A",
+        templateUrl: 'pages/footer.html',
+        link: linkFunction,
+        scope: {}
+    };
+});
+
 // ---------- CONTROLLER ----------
 // criou o controller e o inject $scope
 myApp.controller('mainController', function ($scope) {

@@ -2,23 +2,33 @@
 <html ng-app="myApp"><!-- definição do angular app -->
 
 <head>
-    <title>Matheus Pessoa</title>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="icon" type="image/ico" href="/img/icon/rocket.png">
+    <title>Matheus Pessoa</title><!-- Title -->
 
-    <!-- CSS -->
-        <link rel="stylesheet" href="styles.css" type="text/css">
+    <!-- Meta tags -->
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#4E9AC1"><!-- Theme color -->
+        <meta name="subject" content="your website's subject"><!-- Breve descrição do site / Utilizado no SEO -->
+        <meta name="robots" content="index,header,footer,home,sobre,portfolio,contato"><!-- Páginas permitidas a serem indexedas por motores de busca -->
+        <meta name="googlebot" content="index,header,footer,home,sobre,portfolio,contato"><!-- Mesma coisa acima porém exclusivamente para o Google -->
+        <meta name="url" content="https://matheusmpessoa.github.io"><!-- Domínio completo ou o endereço web -->
+    <!-- Icon page -->
+    <link rel="icon" type="image/ico" href="/img/icon/fav-icon-rocket.png">
+
+    <!-- CSS externo -->
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <!-- Animate.css -->
         <link rel="stylesheet" href="css/animate.css" type="text/css">
     <!-- Sweetalert -->
         <link rel="stylesheet" href="js/sweetalert/sweetalert.css" type="text/css">
 </head>
 
-<!-- definição do controller -->
-<body ng-controller="mainController">
-    <div class="container">
-        <div my-header></div>
-        <div ng-view></div>
-        <div my-footer></div>
+<body ng-controller="mainController"><!-- definição do controller -->
+    <div>
+        <div my-header></div><!-- Diretiva do Header -->
+        <div class="container">
+            <div ng-view></div><!-- Diretiva do conteúdo da página -->
+        </div>
+        <div my-footer></div><!-- Diretiva do Footer -->
     </div>
 
     <!-- Scripts -->

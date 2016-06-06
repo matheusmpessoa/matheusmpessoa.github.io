@@ -20,6 +20,7 @@ Website contendo informações pessoais e sobre minha carreira profissional
 * Fortawesome
 * Clipboard.js
 * Sweetalert
+* Particle.js
 
 License
 ----

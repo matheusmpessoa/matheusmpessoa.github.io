@@ -12,32 +12,13 @@
 
 
 /* HEADER */
-    header{
-        text-align: right;
-    }
-
-    nav{
-        display:inline-block;
-        margin:0px auto 15px;
-        background-color:#4E9AC1;
-        box-shadow:0 1px 1px #ccc;
-        border-radius:2px;
-    }
-
     nav a{
         display:inline-block;
-        padding: 18px 30px;
-        color:#fff !important;
+        color:#fff;
         font-weight:bold;
         font-size:14px;
-        text-decoration:none !important;
         line-height:1;
         text-transform: uppercase;
-        background-color:transparent;
-
-        -webkit-transition:background-color 0.25s;
-        -moz-transition:background-color 0.25s;
-        transition:background-color 0.25s;
     }
 
 /* FOOTER */
@@ -46,11 +27,8 @@
     }
 
 /* CONTAINER */
-    .container .jumbotron {
-        background-color: #ecf0f1;    /* White */
-    }
     .container .jumbotron i{
-        color: #4E9AC1;    /* Blue */
+        color: #55B460;    /* Green */
     }
     .container h1{
         color: #444; /* Gray */
@@ -65,7 +43,7 @@
         /* #001f3f Navy */
     }
     .container a{
-        color: #4e9ac1;    /* Blue */
+        color: #55B460;    /* Green */
         text-decoration: none;
     }
 
@@ -87,12 +65,11 @@
     }
 
 /* HOME */
-
+    .home a:hover{
+        color: #55B460; /* Green */
+    }
 
 /* ABOUT */
-    .about a{
-        color: #ff8282;    /* Red */
-    }
     .about ul li{
         width: 100%;
         font-size: 0.8em;
@@ -126,19 +103,6 @@
     }
 
 /* CONTATO */
-    .contato input.ng-invalid.ng-dirty{
-        border: 1px solid #ff8282;    /* Red */
-        background-color: #ffc8c8;    /* Red */
-    }
-    .contato form{
-        font-size: 0.8em;
-        padding-bottom: 10px;
-
-    }
-    .contato form input{
-        height: 40px;
-        width: 40%;
-    }
     .contato div ul a{
         padding: 5px;
     }

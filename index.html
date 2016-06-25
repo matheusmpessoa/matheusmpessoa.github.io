@@ -1,57 +1,51 @@
 <!DOCTYPE html>
-<html ng-app="myApp"><!-- definição do angular app -->
+<html ng-app="mainApp"><!-- definição do angular app -->
+    <head>
+        <title>Matheus Pessoa</title><!-- Title da página -->
 
-<head>
-    <title>Matheus Pessoa</title><!-- Title -->
+        <!-- Meta tags -->
+            <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="theme-color" content="#4E9AC1"><!-- Cor tema da página -->
+            <meta name="subject" content="Website constrúido para meu próprio portfolio"><!-- Breve descrição do site / Utilizado no SEO -->
+            <meta name="robots" content="index,header,footer,home,sobre,portfolio,contato"><!-- Páginas permitidas a serem indexedas por motores de busca -->
+            <meta name="googlebot" content="index,header,footer,home,sobre,portfolio,contato"><!-- Mesma coisa acima porém exclusivamente para o Google -->
+            <meta name="url" content="https://matheusmpessoa.github.io"><!-- Domínio completo ou o endereço web -->
 
-    <!-- Meta tags -->
-        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#4E9AC1"><!-- Theme color -->
-        <meta name="subject" content="your website's subject"><!-- Breve descrição do site / Utilizado no SEO -->
-        <meta name="robots" content="index,header,footer,home,sobre,portfolio,contato"><!-- Páginas permitidas a serem indexedas por motores de busca -->
-        <meta name="googlebot" content="index,header,footer,home,sobre,portfolio,contato"><!-- Mesma coisa acima porém exclusivamente para o Google -->
-        <meta name="url" content="https://matheusmpessoa.github.io"><!-- Domínio completo ou o endereço web -->
+        <!-- Icon page -->
+            <link rel="icon" type="image/ico" href="/img/icon/fav-icon-rocket.png">
 
-    <!-- Icon page -->
-    <link rel="icon" type="image/ico" href="/img/icon/fav-icon-rocket.png">
+        <!-- CSS -->
+            <!-- CSS estilizada -->
+                <link rel="stylesheet" href="css/styles.css" type="text/css">
+            <!-- Bootstrap -->
+                <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+            <!-- FortAwesome -->
+                <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.css">
+            <!-- Animate.css -->
+                <link rel="stylesheet" href="css/animate.css" type="text/css">
+            <!-- Sweetalert -->
+                <link rel="stylesheet" href="css/sweetalert/sweetalert.css" type="text/css">
+    </head>
 
-    <!-- CSS externo -->
-        <link rel="stylesheet" href="css/styles.css" type="text/css">
-        <link rel="stylesheet" href="js/particle/particles-style.css" type="text/css">
-    <!-- Animate.css -->
-        <link rel="stylesheet" href="css/animate.css" type="text/css">
-    <!-- Sweetalert -->
-        <link rel="stylesheet" href="js/sweetalert/sweetalert.css" type="text/css">
-</head>
-
-<body ng-controller="mainController"><!-- definição do controller -->
-    <div id="particles-js">
-        <div my-header></div><!-- Diretiva do Header -->
-        <div class="container">
-            <!-- particles.js container -->
+    <body ng-controller="mainController"><!-- definição do controller -->
+        <div class="container"><!-- Container -->
+            <div my-header></div><!-- Diretiva do Header -->
             <div ng-view></div><!-- Diretiva do conteúdo da página -->
+            <div my-footer></div><!-- Diretiva do Footer -->
         </div>
-        <div my-footer></div><!-- Diretiva do Footer -->
-    </div>
 
-    <!-- Scripts -->
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-        <script src="js/script.js"></script>
-    <!-- FortAwesome -->
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.css" />
-    <!-- Sweetalert -->
-        <script src="js/sweetalert/sweetalert.min.js"></script>
-        <script src="js/sweetalert/sweetalert-dev.js"></script>
-    <!-- Particle js -->
-        <script src="js/particle/particles.js"></script>
-        <script src="js/particle/particle.json"></script>
-    <!-- Clipboard.js -->
-        <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.5/clipboard.min.js"></script>
-        <!-- Inicia a variavel, e aponta para o botao clicado, dispara o evento -->
-        <script>
-            var clipboard = new Clipboard('.btn');
-        </script>
-</body>
+        <!-- Scripts -->
+            <!-- angular -->
+                <script src="js/angularjs/angular.min.js"></script>
+                <script src="js/angularjs/route/angular-route.min.js"></script>
+                <script src="js/script.js"></script>
+            <!-- Sweetalert -->
+                <script src="js/sweetalert/sweetalert.min.js"></script>
+            <!-- Clipboard.js -->
+                <script src="js/clipboard/clipboard.min.js"></script>
+            <!-- Inicia a variavel, e aponta para o botao clicado, dispara o evento -->
+                <script>
+                    var clipboard = new Clipboard('.btn');
+                </script>
+    </body>
 </html>

@@ -1,5 +1,5 @@
 // criou o modulo e nomeou como myApp
-var myApp = angular.module('myApp', ['ngRoute']);
+var myApp = angular.module('mainApp', ['ngRoute']);
 
 // ---------- ROUTE ----------
 // configure routes
@@ -45,8 +45,7 @@ myApp.directive("myHeader", function () {
     return {
         restrict: "A",
         templateUrl: 'pages/header.html',
-        link: linkFunction,
-        scope: {}
+        link: linkFunction
     };
 });
 
@@ -58,8 +57,7 @@ myApp.directive("myFooter", function () {
     return {
         restrict: "A",
         templateUrl: 'pages/footer.html',
-        link: linkFunction,
-        scope: {}
+        link: linkFunction
     };
 });
 
@@ -67,9 +65,7 @@ myApp.directive("myFooter", function () {
 // criou o controller e o inject $scope
 myApp.controller('mainController', function ($scope) {
     // mensagem para ser disparada na view
-    $scope.title = 'Matheus Pessoa';
-    $scope.footer = 'Site desenvolvido por';
-    $scope.name = 'Matheus Pessoa';
+
 });
 
 
@@ -88,9 +84,3 @@ function sweetCopy() {
         showConfirmButton: false
     });
 }
-
-
-// ---------- PARTICLE ----------
-myApp.load('particles-js', 'assets/particles.json', function() {
-  console.log('callback - particles.js config loaded');
-});

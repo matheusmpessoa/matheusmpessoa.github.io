@@ -65,7 +65,6 @@
 
 /* FOOTER */
     .container footer{
-        text-align: center;
         margin: 50px 0;
         text-transform: uppercase;
     }
@@ -87,7 +86,6 @@
     }
     .container .portfolio ul li{
         font-size: 0.8em;
-        padding-bottom: 4px;
     }
 
 /* CONTATO */

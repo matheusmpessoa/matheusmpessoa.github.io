@@ -95,6 +95,34 @@ app.controller("sobreController", function ($scope) {
     ];
 });
 
+app.controller('portfolioController', function ($scope) {
+    $scope.sistemas = [
+        { name: "contactListApp", link: "https://github.com/matheusmpessoa/contactListApp"},
+        { name: "angularjs-example", link: "https://github.com/matheusmpessoa/angularjs-example"},
+        { name: "javascript-pure-example", link: "https://github.com/matheusmpessoa/javascript-pure-example"},
+        { name: "jquery-example", link: "https://github.com/matheusmpessoa/jquery-example"},
+        { name: "links-dev-js", link: "https://github.com/matheusmpessoa/links-dev-js"},
+        { name: "angularjs-succinctly", link: "hhttps://github.com/matheusmpessoa/angularjs-succinctly"},
+        { name: "haskell", link: "https://github.com/matheusmpessoa/haskell"},
+        { name: "gemstore-angularjs", link: "https://github.com/matheusmpessoa/gemstore-angularjs"},
+        { name: "form-angularjs", link: "https://github.com/matheusmpessoa/form-angularjs"}
+    ];
+
+    $scope.aplicativos = [
+        { name: "app-fibonacci", link: "https://github.com/matheusmpessoa/app-fibonacci"},
+        { name: "app-dicionario", link: "https://github.com/matheusmpessoa/app-dicionario"}
+    ];
+
+    $scope.contribuicoes = [
+        { name: "fatecrl-curso-si", link: "https://github.com/matheusmpessoa/fatecrl-curso-si"},
+        { name: "dctb-links", link: "https://github.com/matheusmpessoa/dctb-links"},
+        { name: "fibonacci", link: "https://github.com/matheusmpessoa/fibonacci"}
+    ];
+});
+
+app.controller('contatoController', function ($scope) {
+
+});
 
 // ---------- SWEETCOPY ----------
 function copyCtrl($scope) {

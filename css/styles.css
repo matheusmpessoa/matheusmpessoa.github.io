@@ -47,15 +47,6 @@
         text-decoration: none;
     }
 
-    a, a:visited {
-        outline:none;
-        color:#389dc1;
-    }
-
-    a:hover{
-        text-decoration:none;
-    }
-
     section, footer, header, aside, nav{
         display: block;
     }
@@ -70,16 +61,21 @@
     }
 
 /* ABOUT */
-    .about ul li{
+    .sobre ul li{
         width: 100%;
         font-size: 0.8em;
         padding-bottom: 4px;
+        margin-left: 10px;
     }
-    .about div h4{
+    .sobre div h2{
+        color: #55B460; /* Green */
+        margin-left: 0px;
+    }
+    .sobre div h4{
         text-decoration: underline;
-        margin-left: 5px;
+        margin-left: 0px;
     }
-    .about div p{
+    .sobre div p{
         margin: 0px 0px 15px 15px;
     }
 

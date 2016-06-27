@@ -1,9 +1,9 @@
 // criou o modulo e nomeou como myApp
-var myApp = angular.module('mainApp', ['ngRoute']);
+var app = angular.module('mainApp', ['ngRoute']);
 
 // ---------- ROUTE ----------
 // configure routes
-myApp.config(function ($routeProvider) {
+app.config(function ($routeProvider) {
     $routeProvider
 
         // route para a pagina home
@@ -15,7 +15,7 @@ myApp.config(function ($routeProvider) {
         // route para a pagina about
         .when('/sobre', {
             templateUrl : 'pages/sobre.html',
-            controller  : 'aboutController'
+            controller  : 'sobreController'
         })
         
         // route para a pagina portfolio
@@ -27,7 +27,7 @@ myApp.config(function ($routeProvider) {
         // route para a pagina contact
         .when('/contato', {
             templateUrl : 'pages/contato.html',
-            controller  : 'contactController'
+            controller  : 'contatoController'
         })
         
         // route para ser redirecionado se o endereço for digitado errado
@@ -37,7 +37,7 @@ myApp.config(function ($routeProvider) {
 });
 
 // ---------- DIRECTIVE ----------
-myApp.directive("myHeader", function () {
+app.directive("myHeader", function () {
     var linkFunction = function (scope, element, attributes) {
         scope.text = attributes["myHeader"];
     };
@@ -49,7 +49,7 @@ myApp.directive("myHeader", function () {
     };
 });
 
-myApp.directive("myFooter", function () {
+app.directive("myFooter", function () {
     var linkFunction = function (scope, element, attributes) {
         scope.text = attributes["myFooter"];
     };
@@ -63,9 +63,36 @@ myApp.directive("myFooter", function () {
 
 // ---------- CONTROLLER ----------
 // criou o controller e o inject $scope
-myApp.controller('mainController', function ($scope) {
-    // mensagem para ser disparada na view
+app.controller('mainController', function ($scope) {
 
+});
+
+app.controller("sobreController", function ($scope) {
+    $scope.linguagens = [
+        { name: "HTML5"},
+        { name: "CSS3"},
+        { name: "JavaScript"},
+        { name: "Node.js"},
+        { name: "MongoDB"}
+    ];
+
+    $scope.frameworksBibliotecas = [
+        { name: "AngularJS"},
+        { name: "Ionic"},
+        { name: "jQuery"},
+        { name: "Bootstrap 3 e 4"},
+        { name: "Material Design Lite"}
+    ];
+
+    $scope.ferramentas = [
+        { name: "Trello"},
+        { name: "Balsamiq"}
+    ];
+
+    $scope.ides = [
+        { name: "Brackets (minha preferida)"},
+        { name: "Atom"}
+    ];
 });
 
 

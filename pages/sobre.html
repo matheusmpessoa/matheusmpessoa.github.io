@@ -1,12 +1,13 @@
-<div class="sobre">
+<div class="sobre" ng-controller="sobreController">
     <div class="jumbotron animated fadeIn">
         <h1>Sobre <i class="fa fa-info-circle fa-fw"></i></h1>
 
         <div class="info col-md-12">
             <h2>Informações pessoais</h2>
             <p><i class="fa fa-child fa-fw"></i>
-                Sou <span>Matheus Pessoa</span> e tenho 19 anos de idade
+                Sou <span>Matheus Pessoa</span> e tenho 20 anos de idade
             </p>
+            <p><img src=""</p>
         </div>
         <div class="degree col-md-12">
             <p><i class="fa fa-graduation-cap fa-fw"></i>
@@ -14,12 +15,12 @@
                 <a href="http://fatecrl.edu.br/" target="_blank"><i>Fatec Rubens Lara</i></a>
             </p>
             <p><i class="fa fa-code fa-fw"></i>
-                Sou um desenvolvedor web desde 2013
+                Sou um desenvolvedor web desde 2013 e apaixonado por JS
             </p>
             <p><i class="fa fa-book fa-fw"></i>
                 Atualmente estou estudando e praticando para ser um desenvolvedor Full-Stack JavaScript
-                <br> Venho me aprimorando cada vez mais na stack
-                <a href="http://mean.io/#!/" target="_blank"><i><abbr title="MongoDB / Express JS / Angular JS / Node.js">MEAN</abbr></i></a>
+                <br> Venho me aprimorando cada vez mais na
+                <a href="http://mean.io/#!/" target="_blank"><i><abbr title="MongoDB / Express JS / Angular JS / Node.js">MEAN stack</abbr></i></a>
             </p>
         </div>
 
@@ -27,34 +28,30 @@
 
         <div class="habilidades col-md-12">
             <h2>Habilidades</h2>
-                <p><i class="fa fa-certificate fa-fw"></i> Confira aqui minhas habilidades com linguagens, bibliotecas e frameworks</p>
+            <p><i class="fa fa-certificate fa-fw"></i> Confira aqui minhas habilidades com linguagens, bibliotecas e frameworks</p>
+
             <div class="col-md-6">
                 <h4>Linguagens</h4>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Javascript</li>
-                    <li>Node.js</li>
-                    <li>MongoDB</li>
-                    <li>Laravel</li>
+                <ul ng-repeat="linguagem in linguagens">
+                    <li ng-bind="linguagem.name"></li>
                 </ul>
             </div>
             <div class="col-md-6">
                 <h4>Frameworks e Bibliotecas</h4>
-                <ul>
-                    <li>Bootstrap</li>
-                    <li>Material Design Lite</li>
-                    <li>Foundation</li>
-                    <li>AngularJS</li>
-                    <li>JQuery</li>
-                    <li>Ionic</li>
+                <ul ng-repeat="item in frameworksBibliotecas">
+                    <li ng-bind="item.name"></li>
                 </ul>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-6">
                 <h4>Ferramentas</h4>
-                <ul>
-                    <li>Balsamiq</li>
-                    <li>Trello</li>
+                <ul ng-repeat="ferramenta in ferramentas">
+                    <li ng-bind="ferramenta.name"></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4>IDEs</h4>
+                <ul ng-repeat="ide in ides">
+                    <li ng-bind="ide.name"></li>
                 </ul>
             </div>
         </div>

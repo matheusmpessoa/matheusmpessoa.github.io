@@ -1,29 +1,9 @@
 /* BODY */
-    *{
+    body{
         margin:0;
         padding:0;
-
-    }
-
-    body{
         font:15px/1.3 'Open Sans', sans-serif;
         color: #5e5b64;
-    }
-
-
-/* HEADER */
-    nav a{
-        display:inline-block;
-        color:#fff;
-        font-weight:bold;
-        font-size:14px;
-        line-height:1;
-        text-transform: uppercase;
-    }
-
-/* FOOTER */
-    footer{
-        text-align: center;
     }
 
 /* CONTAINER */
@@ -32,74 +12,86 @@
     }
     .container h1{
         color: #444; /* Gray */
-        padding-bottom: 10px;
+        margin: 30px 0px 0px 0px;
     }
     .container h2{
-        color: #444; /* Gray */
+        color: #55B460; /* Green */
+        margin-left: 5px;
+    }
+    .container h3{
+        text-decoration: underline;
+        margin-left: 5px;
+        font-size: 0.9em;
+        padding-bottom: 4px;
+    }
+    .container h4{
+        text-decoration: underline;
+        margin-left: 0px;
     }
     .container p{
         color: #222;    /* Black */
         font-size: 0.8em;
-        /* #001f3f Navy */
+        margin: 0px 0px 15px 20px;
     }
     .container a{
         color: #55B460;    /* Green */
         text-decoration: none;
     }
-
+    .container a:hover{
+        color: #4E9AC1; /* Blue */
+    }
+    .navbar-brand{
+        font-size: 5em;
+        display:inline-block;
+        color:#fff;
+        font-weight:bold;
+        font-size:1em;
+        line-height:1;
+        text-transform: uppercase;
+    }
     section, footer, header, aside, nav{
         display: block;
     }
 
-    .container-full {
-        width: 100%;
+/* HEADER */
+    .container header nav a{
+        display:inline-block;
+        color:#fff;
+        font-weight:bold;
+        font-size:1em;
+        line-height:1.5;
+        text-transform: uppercase;
+    }
+
+/* FOOTER */
+    .container footer{
+        text-align: center;
+        margin: 50px 0;
+        text-transform: uppercase;
     }
 
 /* HOME */
-    .home a:hover{
-        color: #55B460; /* Green */
-    }
 
-/* ABOUT */
-    .sobre ul li{
+
+/* SOBRE */
+    .container .sobre .jumbotron ul li{
         width: 100%;
         font-size: 0.8em;
-        padding-bottom: 4px;
-        margin-left: 10px;
-    }
-    .sobre div h2{
-        color: #55B460; /* Green */
-        margin-left: 0px;
-    }
-    .sobre div h4{
-        text-decoration: underline;
-        margin-left: 0px;
-    }
-    .sobre div p{
-        margin: 0px 0px 15px 15px;
+        padding-bottom: 0px;
     }
 
 /* PORTFOLIO */
-    .portfolio ul li{
-        width: 100%;
+    .container .portfolio h3{
+        font-size: 0.9em;
+        padding-bottom: 4px;
+    }
+    .container .portfolio ul li{
         font-size: 0.8em;
         padding-bottom: 4px;
     }
-    .portfolio div h2{
-        margin-left: 5px;
-        font-size: 1em;
-    }
-    .portfolio div h3{
-        text-decoration: underline;
-        margin-left: 5px;
-        font-size: 0.9em;
-    }
-    .portfolio div p{
-        margin: 0px 0px 15px 15px;
-    }
 
 /* CONTATO */
-    .contato div ul a{
+    .container .contato ul a{
         padding: 5px;
     }
 

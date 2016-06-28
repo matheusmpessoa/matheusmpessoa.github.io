@@ -8,31 +8,31 @@ app.config(function ($routeProvider) {
 
     // route para a pagina home
         .when('/', {
-        templateUrl: 'pages/home.html',
+        templateUrl: 'pages/content/home.html',
         controller: 'mainController'
     })
 
     // route para a pagina about
     .when('/sobre', {
-        templateUrl: 'pages/sobre.html',
+        templateUrl: 'pages/content/sobre.html',
         controller: 'sobreController'
     })
 
     // route para a pagina portfolio
     .when('/habilidades', {
-        templateUrl: 'pages/habilidades.html',
+        templateUrl: 'pages/content/habilidades.html',
         controller: 'habilidadesController'
     })
 
     // route para a pagina portfolio
     .when('/portfolio', {
-        templateUrl: 'pages/portfolio.html',
+        templateUrl: 'pages/content/portfolio.html',
         controller: 'portfolioController'
     })
 
     // route para a pagina contact
     .when('/contato', {
-        templateUrl: 'pages/contato.html',
+        templateUrl: 'pages/content/contato.html',
         controller: 'contatoController'
     })
 
@@ -50,7 +50,7 @@ app.directive("myHeader", function () {
 
     return {
         restrict: "A",
-        templateUrl: 'pages/header.html',
+        templateUrl: 'pages/template/header.html',
         controller: 'myHeaderController',
         link: linkFunction
     };
@@ -63,7 +63,7 @@ app.directive("myFooter", function () {
 
     return {
         restrict: "A",
-        templateUrl: 'pages/footer.html',
+        templateUrl: 'pages/template/footer.html',
         link: linkFunction
     };
 });

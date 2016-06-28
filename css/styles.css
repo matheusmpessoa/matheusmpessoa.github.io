@@ -61,7 +61,7 @@
 /* HEADER */
     .container header nav a{
         display:inline-block;
-        color:#fff;
+        color:#ecf0f1; /* White */
         font-weight:bold;
         font-size:1em;
         line-height:1.5;
@@ -69,8 +69,14 @@
     }
 
 /* FOOTER */
-    .container footer{
+    .container footer p{
         margin: 50px 0;
+        color: #ecf0f1; /* White */
+        text-transform: uppercase;
+    }
+    .container footer p a{
+        margin: 50px 0;
+        color: #ecf0f1; /* White */
         text-transform: uppercase;
     }
 

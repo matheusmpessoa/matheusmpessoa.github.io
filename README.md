@@ -4,7 +4,7 @@ Website contendo informações pessoais e sobre minha carreira profissional.
 ### Site online 
 [matheusmpessoa.github.io](http://matheusmpessoa.github.io/#/)
 
-### Version
+### Versão
 2.0.0
 
 ### Linguagens utilizadas
@@ -20,6 +20,7 @@ Website contendo informações pessoais e sobre minha carreira profissional.
 * Fortawesome
 * Clipboard.js
 * Sweetalert
+* Backstretch
 
 License
 ----

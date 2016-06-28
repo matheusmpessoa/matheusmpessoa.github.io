@@ -51,6 +51,7 @@ app.directive("myHeader", function () {
     return {
         restrict: "A",
         templateUrl: 'pages/header.html',
+        controller: 'myHeaderController',
         link: linkFunction
     };
 });
@@ -68,6 +69,13 @@ app.directive("myFooter", function () {
 });
 
 // ---------- CONTROLLER ----------
+app.controller("myHeaderController", function ($scope, $location) {
+    $scope.menuClass = function (page) {
+        var current = $location.path().substring(1);
+        return page === current ? "active" : "";
+    };
+});
+
 // criou o controller e o inject $scope
 app.controller('mainController', function ($scope) {
 

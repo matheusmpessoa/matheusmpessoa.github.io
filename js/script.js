@@ -6,34 +6,40 @@ var app = angular.module('mainApp', ['ngRoute']);
 app.config(function ($routeProvider) {
     $routeProvider
 
-        // route para a pagina home
+    // route para a pagina home
         .when('/', {
-            templateUrl : 'pages/home.html',
-            controller  : 'mainController'
-        })
+        templateUrl: 'pages/home.html',
+        controller: 'mainController'
+    })
 
-        // route para a pagina about
-        .when('/sobre', {
-            templateUrl : 'pages/sobre.html',
-            controller  : 'sobreController'
-        })
-        
-        // route para a pagina portfolio
-        .when('/portfolio', {
-            templateUrl : 'pages/portfolio.html',
-            controller  : 'portfolioController'
-        })
+    // route para a pagina about
+    .when('/sobre', {
+        templateUrl: 'pages/sobre.html',
+        controller: 'sobreController'
+    })
 
-        // route para a pagina contact
-        .when('/contato', {
-            templateUrl : 'pages/contato.html',
-            controller  : 'contatoController'
-        })
-        
-        // route para ser redirecionado se o endereço for digitado errado
-        .otherwise({
-            redirect: '/'
-        });
+    // route para a pagina portfolio
+    .when('/habilidades', {
+        templateUrl: 'pages/habilidades.html',
+        controller: 'habilidadesController'
+    })
+
+    // route para a pagina portfolio
+    .when('/portfolio', {
+        templateUrl: 'pages/portfolio.html',
+        controller: 'portfolioController'
+    })
+
+    // route para a pagina contact
+    .when('/contato', {
+        templateUrl: 'pages/contato.html',
+        controller: 'contatoController'
+    })
+
+    // route para ser redirecionado se o endereço for digitado errado
+    .otherwise({
+        redirect: '/'
+    });
 });
 
 // ---------- DIRECTIVE ----------
@@ -68,55 +74,129 @@ app.controller('mainController', function ($scope) {
 });
 
 app.controller("sobreController", function ($scope) {
+
+});
+
+app.controller('habilidadesController', function ($scope) {
     $scope.linguagens = [
-        { name: "HTML5"},
-        { name: "CSS3"},
-        { name: "JavaScript"},
-        { name: "Node.js"},
-        { name: "MongoDB"}
+        {
+            name: "HTML5"
+        },
+        {
+            name: "CSS3"
+        },
+        {
+            name: "JavaScript"
+        },
+        {
+            name: "Node.js"
+        },
+        {
+            name: "MongoDB"
+        }
     ];
 
     $scope.frameworksBibliotecas = [
-        { name: "AngularJS"},
-        { name: "Ionic"},
-        { name: "jQuery"},
-        { name: "Bootstrap 3 e 4"},
-        { name: "Material Design Lite"}
+        {
+            name: "AngularJS"
+        },
+        {
+            name: "Ionic"
+        },
+        {
+            name: "jQuery"
+        },
+        {
+            name: "Bootstrap 3 e 4"
+        },
+        {
+            name: "Material Design Lite"
+        }
     ];
 
     $scope.ferramentas = [
-        { name: "Trello"},
-        { name: "Balsamiq"}
+        {
+            name: "Trello"
+        },
+        {
+            name: "Balsamiq"
+        }
     ];
 
     $scope.ides = [
-        { name: "Brackets (minha preferida)"},
-        { name: "Atom"}
+        {
+            name: "Brackets (minha preferida)"
+        },
+        {
+            name: "Atom"
+        }
     ];
 });
 
 app.controller('portfolioController', function ($scope) {
     $scope.sistemas = [
-        { name: "contactListApp", link: "https://github.com/matheusmpessoa/contactListApp"},
-        { name: "angularjs-example", link: "https://github.com/matheusmpessoa/angularjs-example"},
-        { name: "javascript-pure-example", link: "https://github.com/matheusmpessoa/javascript-pure-example"},
-        { name: "jquery-example", link: "https://github.com/matheusmpessoa/jquery-example"},
-        { name: "links-dev-js", link: "https://github.com/matheusmpessoa/links-dev-js"},
-        { name: "angularjs-succinctly", link: "hhttps://github.com/matheusmpessoa/angularjs-succinctly"},
-        { name: "haskell", link: "https://github.com/matheusmpessoa/haskell"},
-        { name: "gemstore-angularjs", link: "https://github.com/matheusmpessoa/gemstore-angularjs"},
-        { name: "form-angularjs", link: "https://github.com/matheusmpessoa/form-angularjs"}
+        {
+            name: "contactListApp",
+            link: "https://github.com/matheusmpessoa/contactListApp"
+        },
+        {
+            name: "angularjs-example",
+            link: "https://github.com/matheusmpessoa/angularjs-example"
+        },
+        {
+            name: "javascript-pure-example",
+            link: "https://github.com/matheusmpessoa/javascript-pure-example"
+        },
+        {
+            name: "jquery-example",
+            link: "https://github.com/matheusmpessoa/jquery-example"
+        },
+        {
+            name: "links-dev-js",
+            link: "https://github.com/matheusmpessoa/links-dev-js"
+        },
+        {
+            name: "angularjs-succinctly",
+            link: "hhttps://github.com/matheusmpessoa/angularjs-succinctly"
+        },
+        {
+            name: "haskell",
+            link: "https://github.com/matheusmpessoa/haskell"
+        },
+        {
+            name: "gemstore-angularjs",
+            link: "https://github.com/matheusmpessoa/gemstore-angularjs"
+        },
+        {
+            name: "form-angularjs",
+            link: "https://github.com/matheusmpessoa/form-angularjs"
+        }
     ];
 
     $scope.aplicativos = [
-        { name: "app-fibonacci", link: "https://github.com/matheusmpessoa/app-fibonacci"},
-        { name: "app-dicionario", link: "https://github.com/matheusmpessoa/app-dicionario"}
+        {
+            name: "app-fibonacci",
+            link: "https://github.com/matheusmpessoa/app-fibonacci"
+        },
+        {
+            name: "app-dicionario",
+            link: "https://github.com/matheusmpessoa/app-dicionario"
+        }
     ];
 
     $scope.contribuicoes = [
-        { name: "fatecrl-curso-si", link: "https://github.com/matheusmpessoa/fatecrl-curso-si"},
-        { name: "dctb-links", link: "https://github.com/matheusmpessoa/dctb-links"},
-        { name: "fibonacci", link: "https://github.com/matheusmpessoa/fibonacci"}
+        {
+            name: "fatecrl-curso-si",
+            link: "https://github.com/matheusmpessoa/fatecrl-curso-si"
+        },
+        {
+            name: "dctb-links",
+            link: "https://github.com/matheusmpessoa/dctb-links"
+        },
+        {
+            name: "fibonacci",
+            link: "https://github.com/matheusmpessoa/fibonacci"
+        }
     ];
 });
 
@@ -130,10 +210,11 @@ function copyCtrl($scope) {
         sweetCopy();
     };
 }
+
 function sweetCopy() {
     swal({
         title: "<p><img src='img/icon/dollynho.jpg'></p>",
-        text:  "<p>Mensagem copiada para área de transferência</p>",
+        text: "<p>Mensagem copiada para área de transferência</p>",
         timer: 1500,
         html: true,
         showConfirmButton: false

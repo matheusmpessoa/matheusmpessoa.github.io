@@ -88,7 +88,7 @@ app.controller("sobreController", function ($scope) {
 app.controller('habilidadesController', function ($scope) {
     $scope.linguagens = [
         {
-            name: "HTML5"
+            name: "HTML5",
         },
         {
             name: "CSS3"
@@ -124,6 +124,12 @@ app.controller('habilidadesController', function ($scope) {
 
     $scope.ferramentas = [
         {
+            name: "Grunt"
+        },
+        {
+            name: "Gulp"
+        },
+        {
             name: "Trello"
         },
         {
@@ -137,6 +143,24 @@ app.controller('habilidadesController', function ($scope) {
         },
         {
             name: "Atom"
+        },
+        {
+            name: "IntelXDK"
+        }
+    ];
+
+    $scope.versionamento = [
+        {
+            name: "Github"
+        }
+    ];
+
+    $scope.sistemas = [
+        {
+            name: "Windows",
+        },
+        {
+            name: "Ubuntu / Linux"
         }
     ];
 });

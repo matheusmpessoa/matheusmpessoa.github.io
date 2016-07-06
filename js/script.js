@@ -172,8 +172,12 @@ app.controller('portfolioController', function ($scope) {
             link: "https://github.com/matheusmpessoa/contactListApp"
         },
         {
-            name: "angularjs-example",
-            link: "https://github.com/matheusmpessoa/angularjs-example"
+            name: "cursos-rodrigobranas",
+            link: "https://github.com/matheusmpessoa/cursos-rodrigobranas"
+        },
+        {
+            name: "cursos-codedamn",
+            link: "https://github.com/matheusmpessoa/cursos-codedamn"
         },
         {
             name: "javascript-pure-example",

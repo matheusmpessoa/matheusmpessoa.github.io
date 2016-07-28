@@ -168,8 +168,12 @@ app.controller('habilidadesController', function ($scope) {
 app.controller('portfolioController', function ($scope) {
     $scope.sistemas = [
         {
-            name: "contactListApp",
-            link: "https://github.com/matheusmpessoa/contactListApp"
+            name: "filmes-mean",
+            link: "https://github.com/matheusmpessoa/filmes-mean"
+        },
+        {
+            name: "contactListApp-mean",
+            link: "https://github.com/matheusmpessoa/contactListApp-mean"
         },
         {
             name: "cursos-rodrigobranas",
@@ -215,8 +219,8 @@ app.controller('portfolioController', function ($scope) {
             link: "https://github.com/matheusmpessoa/app-fibonacci"
         },
         {
-            name: "app-dicionario",
-            link: "https://github.com/matheusmpessoa/app-dicionario"
+            name: "app-traducao",
+            link: "https://github.com/matheusmpessoa/app-traducao"
         }
     ];
 

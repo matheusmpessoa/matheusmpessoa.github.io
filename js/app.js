@@ -9,27 +9,27 @@ app.config(function ($routeProvider) {
     })
 
     .when('/sobre', {
-        templateUrl: 'pages/content/sobre.html',
+        templateUrl: 'pages/sobre.html',
         controller: 'SobreCtrl'
     })
 
     .when('/habilidades', {
-        templateUrl: 'pages/content/habilidades.html',
+        templateUrl: 'pages/habilidades.html',
         controller: 'HabilidadesCtrl'
     })
 
     .when('/portfolio', {
-        templateUrl: 'pages/content/portfolio.html',
+        templateUrl: 'pages/portfolio.html',
         controller: 'PortfolioCtrl'
     })
 
     .when('/contato', {
-        templateUrl: 'pages/content/contato.html',
+        templateUrl: 'pages/contato.html',
         controller: 'ContatoCtrl'
     })
 
     .when('/erro', {
-        templateUrl: 'pages/content/404.html',
+        templateUrl: 'pages/404.html',
         controller: 'ErroCtrl'
     })
 

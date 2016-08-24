@@ -1,44 +1,5 @@
-<div class="habilidades" ng-controller="habilidadesController">
-    <div class="jumbotron animated fadeIn">
-        <h1>Habilidades <i class="fa fa-code fa-fw"></i></h1>
+<div class="jumbotron text-center">
+	<h1>Habilidades Page</h1>
 
-        <p><i class="fa fa-certificate fa-fw"></i> Confira aqui minhas habilidades com linguagens, bibliotecas e frameworks</p>
-
-        <div class="col-md-12">
-            <h4>Linguagens</h4>
-            <ul ng-repeat="linguagem in linguagens">
-                <li ng-bind="linguagem.name"></li>
-            </ul>
-        </div>
-        <div class="col-md-12">
-            <h4>Frameworks e Bibliotecas</h4>
-            <ul ng-repeat="item in frameworksBibliotecas">
-                <li ng-bind="item.name"></li>
-            </ul>
-        </div>
-        <div class="col-md-12">
-            <h4>Ferramentas</h4>
-            <ul ng-repeat="ferramenta in ferramentas">
-                <li ng-bind="ferramenta.name"></li>
-            </ul>
-        </div>
-        <div class="col-md-12">
-            <h4>IDEs</h4>
-            <ul ng-repeat="ide in ides">
-                <li ng-bind="ide.name"></li>
-            </ul>
-        </div>
-        <div class="col-md-12">
-            <h4>Versionamento</h4>
-            <ul ng-repeat="vers in versionamento">
-                <li ng-bind="vers.name"></li>
-            </ul>
-        </div>
-        <div class="col-md-12">
-            <h4>SO</h4>
-            <ul ng-repeat="so in sistemas">
-                <li ng-bind="so.name"></li>
-            </ul>
-        </div>
-    </div>
+	<p>{{ message }}</p>
 </div>

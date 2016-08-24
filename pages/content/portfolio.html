@@ -1,27 +1,5 @@
-<div class="portfolio" ng-controller="portfolioController">
-    <div class="jumbotron animated fadeIn">
-        <h1>Portfolio <i class="fa fa-folder fa-fw"></i></h1>
+<div class="jumbotron text-center">
+	<h1>Portfolio Page</h1>
 
-        <h2>Trabalhos realizados</h2>
-        <div class="col-md-12">
-            <div class="col-md-12">
-                <h4>Websites e aplicações</h4>
-                <ul ng-repeat="sistema in sistemas">
-                    <li><a href="{{sistema.link}}"><span ng-bind="sistema.name"></span></a></li>
-                </ul>
-            </div>
-            <div class="col-md-12">
-                <h4>Aplicativos móveis - apps</h4>
-                <ul ng-repeat="app in aplicativos">
-                    <li><a href="{{app.link}}"><span ng-bind="app.name"></span></a></li>
-                </ul>
-            </div>
-            <div class="col-md-12">
-                <h4>Contribuições</h4>
-                <ul ng-repeat="contrib in contribuicoes">
-                    <li><a href="{{contrib.link}}"><span ng-bind="contrib.name"></span></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+	<p>{{ message }}</p>
 </div>

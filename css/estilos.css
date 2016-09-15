@@ -27,3 +27,14 @@ h2{
 .espacar{
     padding-left: 20px;
 }
+
+ul{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.brand{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+}

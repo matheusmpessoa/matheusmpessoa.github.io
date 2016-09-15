@@ -5,6 +5,7 @@ app.directive('header', function () {
         restrict: 'E',
         templateUrl: function (tElement, tAttrs) {
             return tAttrs.templateUrl ? tAttrs.templateUrl : 'pages/template/header.html';
+            controller: 'HeaderCtrl';
         }
     };
 });
@@ -21,6 +22,12 @@ app.directive('footer', function () {
 
 app.controller('HomeCtrl', function ($scope) {
     $scope.message = 'Everyone come and see how good I look!';
+});
+
+app.controller('HeaderCtrl', function ($scope) {
+    $scope.active = function (path) {
+        return ($location.path().substr(0, path.length) === path) ? 'active' : '';
+    }
 });
 
 app.controller('SobreCtrl', function ($scope) {

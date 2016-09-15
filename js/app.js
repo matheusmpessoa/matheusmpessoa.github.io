@@ -13,11 +13,6 @@ app.config(function ($routeProvider) {
         controller: 'SobreCtrl'
     })
 
-    .when('/habilidades', {
-        templateUrl: 'pages/habilidades.html',
-        controller: 'HabilidadesCtrl'
-    })
-
     .when('/portfolio', {
         templateUrl: 'pages/portfolio.html',
         controller: 'PortfolioCtrl'

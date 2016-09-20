@@ -1,35 +1,416 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html>
 
 <head>
-    <title>Matheus Pessoa</title>
+    <title>Matheus Pessoa - Portfólio</title>
+
     <meta charset="utf-8">
+    <meta name="description" content="Portfolio de Matheus Pessoa, desenvolvedor web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
-    <!-- Bootstrap components -->
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/componentes/blog.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
-<body ng-controller="HomeCtrl">
+<body>
+    <nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsible">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand text-danger" href="#">MATHEUS PESSOA</a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-collapsible">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#section1">Home</a></li>
+                    <li><a href="#section2">Sobre</a></li>
+                    <li><a href="#section3">Portfólio</a></li>
+                    <li><a href="#section4">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <header></header>
-    <div class="container">
-        <!-- angular templating -->
-        <div ng-view></div>
-        <footer></footer>
+    <section class="container-fluid" id="section1">
+        <div class="v-center">
+            <h1 class="text-center">Matheus Pessoa</h1>
+            <h2 class="text-center lato animate slideInDown">Desenvolvedor web</h2>
+            <p class="text-center">
+                <br>
+                <a href="#section3" class="btn btn-danger btn-lg btn-huge lato" data-toggle="modal" data-target="#myModal">Visitar portfólio</a>
+            </p>
+        </div>
+        <a href="#section2">
+            <div class="scroll-down bounceInDown animated">
+                <span>
+                <i class="fa fa-angle-down fa-2x"></i>
+            </span>
+            </div>
+        </a>
+    </section>
+
+    <section class="container-fluid" id="section2">
+        <div class="container">
+            <h1 class="text-center">Sobre</h1>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <h2>Sobre mim</h2>
+                            <br>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <p>Matheus Pessoa - desenvolvedor web. 20 anos de idade, nascido e crescido em Santos-SP.</p>
+                                    <p>Apaixonado por tecnologia e doente por futebol.</p>
+                                    <p>Na área de desenvolvimento desde 2013, sempre ligado em novas tecnologias e em aprimorar conhecimentos.</p>
+                                </div>
+                            </div>
+                            <p class="text-center">
+                                <img src="img/sobre/avatar.jpg" class="img-responsive thumbnail center-block avatar">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2>Graduação</h2>
+                            <img src="img/sobre/logo-fatec.png" class="img-responsive fatec">
+                            <p>Estudante da <a href="http://fatecrl.edu.br/">Fatec Rubens Lara</a>, faculdade também conhecida como Fatec Baixada Santista, que se localiza em Santos-SP.</p>
+                            <p>Cursa <a href="http://fatecrl.edu.br/cursos/sobre/si">Sistemas para Internet</a>, curso que como o próprio nome sugere, é focado na área de desenvolvimento web. O tecnólogo formado neste curso aprende a desenvolver programas, aplicativos móveis, interfaces e sistemas web. </p>
+                            <p>Término previsto para dezembro de 2016.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2>Interesses</h2>
+
+                            <p><span class="sublinhar">Sistemas Web</span>
+                                <br> Criação de layouts responsivos e desenvolvimento de aplicações para web.
+                            </p>
+                            <p><span class="sublinhar">Transformação de layouts</span>
+                                <br> Transformação de layouts em .psd para páginas web.
+                            </p>
+                            <p><span class="sublinhar">Design de Interfaces | UI & UX</span>
+                                <br> Criação de interfaces que transmitam uma experiência agradável ao usuário.
+                            </p>
+                            <p><span class="sublinhar">Aplicativos Móveis</span>
+                                <br> Desenvolvimento de aplicações híbridas para Android e iOS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <h2>Habilidades</h2>
+                    <p>Habilidades relacionadas a desenvolvimento web.</p>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h3>Sistemas Operacionais</h3>
+                                <ul>
+                                    <li>Windows</li>
+                                    <li>Linux</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h3>Linguagens</h3>
+                                <ul>
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h3>Banco de dados</h3>
+                                <ul>
+                                    <li>MongoDB</li>
+                                    <li>Firebase</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h3>Versionamento</h3>
+                                <ul>
+                                    <li>Git</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h3>Automatizadores</h3>
+                                <ul>
+                                    <li>Gulp</li>
+                                    <li>Grunt</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h3>Frameworks e bibliotecas</h3>
+                                <ul>
+                                    <li>Node.js</li>
+                                    <li>AngularJS</li>
+                                    <li>Sass</li>
+                                    <li>Bootstrap 3 e 4</li>
+                                    <li>Material Design Lite</li>
+                                    <li>Foundation</li>
+                                    <li>Ionic</li>
+                                    <li>React</li>
+                                    <li>jQuery</li>
+                                    <li>Vue.js</li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <h3>Frameworks e bibliotecas</h3>
+                                <ul>
+                                    <li>Editores de texto</li>
+                                    <li>Brackets</li>
+                                    <li>Sublime text</li>
+                                    <li>Atom</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fim container -->
+    </section>
+
+    <section class="container-fluid" id="section3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <h1 class="text-center">Portfólio</h1>
+
+                <div class="col-sm-3">
+                    <div class="row">
+                        <h2>Aplicativos móveis</h2>
+                        <div class="media">
+                            <h4>Capítulo Hiram Abif</h4>
+                            <div class="media-left">
+                                <img src="img/portfolio/apps/logo-hiram.jpg">
+                            </div>
+                            <div class="media-body media-middle">
+                                <p>Aplicativo do Capítulo Hiram Abif da Ordem DeMolay. Criado com o intuito de divulgar o Capítulo e repassar conteúdo aos membros do mesmo.</p>
+                                <br>
+                                <button type="button" class="btn btn-default" style="float:right;">Ver repositório</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="media">
+                            <h4>Boom</h4>
+                            <div class="media-body media-middle">
+                                <p>Offset right home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                            </div>
+                            <div class="media-right">
+                                <img src="//placehold.it/80">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-3 text-center">
+                    <div class="row">
+                        <h2>Sistemas web</h2>
+                        <div class="media">
+                            <h4>Boom</h4>
+                            <div class="media-left">
+                                <img src="//placehold.it/80">
+                            </div>
+                            <div class="media-body media-middle">
+                                <p>Some brand-tacular designs even have home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="media">
+                            <h4>Boom</h4>
+                            <div class="media-body media-middle">
+                                <p>Offset right home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                            </div>
+                            <div class="media-right">
+                                <img src="//placehold.it/80">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="media">
+                            <h4>Boom</h4>
+                            <div class="media-left">
+                                <img src="//placehold.it/80">
+                            </div>
+                            <div class="media-body media-middle">
+                                <p>Some brand-tacular designs even have home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-3 text-center">
+                    <div class="row">
+                        <h2>Cursos</h2>
+                        <div class="media">
+                            <h4>Boom</h4>
+                            <div class="media-left">
+                                <img src="//placehold.it/80">
+                            </div>
+                            <div class="media-body media-middle">
+                                <p>Some brand-tacular designs even have home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="media">
+                            <h4>Boom</h4>
+                            <div class="media-body media-middle">
+                                <p>Offset right home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                            </div>
+                            <div class="media-right">
+                                <img src="//placehold.it/80">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/row-->
+        </div>
+        <!--/container-->
+    </section>
+
+    <section class="container-fluid" id="section4">
+        <div class="container v-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">Entre em contato</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <!--<div class="col-md-8 col-md-offset-1">
+                    <div class="row form-group">
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required="">
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="middleName" name="firstName" placeholder="Middle Name" required="">
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required="">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-sm-5">
+                            <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                        </div>
+                        <div class="col-sm-5">
+                            <input type="email" class="form-control" name="phone" placeholder="Phone" required="">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-sm-10">
+                            <input type="homepage" class="form-control" placeholder="Website URL" required="">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-sm-10">
+                            <button class="btn btn-default btn-lg pull-right">Contact Us</button>
+                        </div>
+                    </div>
+                </div>-->
+                <div class="col-md-3 pull-right">
+                    <address>
+                        <strong>Some LLC</strong><br>
+                        795 Folsom Ave, Suite 600<br>
+                        Newport, RI 94107<br>
+                        P: (123) 456-7890
+                    </address>
+                    <address>
+                        <strong>Email Us</strong><br>
+                        <a href="mailto:#">first.last@example.com</a>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid" id="section7">
+        <div class="row">
+            <!--fontawesome icons-->
+            <div class="col-sm-1 col-sm-offset-4 col-xs-4 text-center">
+                <a href="https://github.com/matheusmpessoa" target="_blank">
+                    <i class="fa fa-github fa-4x"></i>
+                </a>
+            </div>
+            <div class="col-sm-1 col-xs-4 text-center">
+                <a href="https://br.linkedin.com/in/matheusmpessoa" target="_blank">
+                    <i class="fa fa-linkedin fa-4x"></i>
+                </a>
+            </div>
+            <div class="col-sm-1 col-xs-4 text-center">
+                <a href="https://www.facebook.com/matheusmpessoa" target="_blank">
+                    <i class="fa fa-facebook fa-4x"></i>
+                </a>
+            </div>
+            <div class="col-sm-1 col-xs-4 text-center">
+                <a href="https://www.instagram.com/matheusmpessoa/" target="_blank"><i class="fa fa-instagram fa-4x"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-3 column">
+                    <h4>Mapa do site</h4>
+                    <ul class="nav">
+                        <li><a href="#section1">Home</a></li>
+                        <li><a href="#section2">Sobre</a></li>
+                        <li><a href="#section2">Graduação</a></li>
+                        <li><a href="#section2">Interesses</a></li>
+                        <li><a href="#section2">Habilidades</a></li>
+                        <li><a href="#section3">Portfólio</a></li>
+                        <li><a href="#section4">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-md-3 column">
+                    <h4>Redes Sociais</h4>
+                    <ul class="nav">
+                        <li><a href="https://github.com/matheusmpessoa" target="_blank">GitHub</a></li>
+                        <li><a href="https://br.linkedin.com/in/matheusmpessoa" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://www.facebook.com/matheusmpessoa" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/matheusmpessoa/" target="_blank">Instagram</a></li>
+                    </ul>
+                    <h4>Outras redes</h4>
+                    <ul class="nav">
+                        <li><a href="http://pt.stackoverflow.com/users/53788/matheus-pessoa">stackoverflow</a></li>
+                        <li><a href="#">jsfiddle</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--/row-->
+            <p class="text-right">© 2016</p>
+        </div>
+    </footer>
+
+    <div class="scroll-up">
+        <a href="#section1"><i class="fa fa-angle-up"></i></a>
     </div>
 
-    <!-- Angular -->
-    <script src="js/angularjs/angular.min.js"></script>
-    <script src="js/angularjs/angular-route.min.js"></script>
-    <!-- Scripts -->
-    <script src="js/app.js"></script>
-    <script src="js/controller.js"></script>
+    <!-- jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!-- Scripts para efeito scroll-up -->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

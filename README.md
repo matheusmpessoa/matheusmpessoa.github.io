@@ -13,14 +13,13 @@ Website contendo informações pessoais e sobre minha carreira profissional.
 * JavaScript
 
 ### Frameworks utilizados
-* Bootstrap
-* AngularJS
+* Bootstrap 3
 
 ### Bibliotecas utilizadas
 * jQuery
 
 ### API's utilizadas
-* Fortawesome
+* Font awesome
 
 
 License

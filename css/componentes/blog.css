@@ -61,6 +61,7 @@ h6,
 .nav-link:hover,
 .nav-link:focus {
     color: #fff;
+    text-decoration: underline;
     background-color: transparent;
 }
 

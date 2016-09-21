@@ -17,7 +17,7 @@ body {
 }
 
 a {
-    color: #999;
+    color: #888;
 }
 
 a:hover {
@@ -127,7 +127,7 @@ a.text-danger {
 }
 
 section {
-    padding-top: 70px;
+    padding-top: 10px;
     padding-bottom: 50px;
     min-height: 100%;
     min-height: calc(100% - 0);
@@ -149,35 +149,62 @@ section {
     }
 }
 
-.avatar{
-    border-radius: 150px;
-}
 
-#section1,
-#section3 {
+#home,
+#portfolio {
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     font-family: 'Bitter', serif;
 }
 
-#section2 {
+.avatar{
+    border-radius: 150px;
+}
+
+#sobre {
     background-color: #fff;
 }
 
-#section3 {
-    background-color: rgba(0, 0, 0, 0.9);
+#sobre p{
+    text-align: justify;
 }
 
-#section4 {
+#sobre img{
+    padding-right: 10px;
+}
+
+.fatec{
+    width: 180px;
+    position: relative;
+    float: left;
+}
+
+#portfolio {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#portfolio h1{
     color: #f44d3c;
-    background-color: rgba(0, 0, 0, 0.7);
 }
 
-#section5 {
-    background-color: #fff;
+#portfolio h4{
+    text-decoration: underline;
 }
 
-#section7 {
+#contato {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#contato h1{
+    color: #f44d3c;
+}
+
+#contato a{
+    color: #f44d3c;
+}
+
+#redesSociais {
     background-color: #f44d3c;
     color: #000;
     min-height: 130px;
@@ -185,11 +212,11 @@ section {
     padding-bottom: 40px;
 }
 
-#section7 a {
+#redesSociais a {
     color: #2b2b2b;
 }
 
-#section7 a:hover {
+#redesSociais a:hover {
     color: #ddd;
 }
 
@@ -211,32 +238,6 @@ footer .nav>li>a:hover {
     color: #fff;
 }
 
-#section2 p{
-    text-align: justify;
-}
-
-#section3 h1{
-    color: #f44d3c;
-}
-
-.avatar{
-    border-radius: 150px;
-}
-
-#section3 h4{
-    text-decoration: underline;
-}
-
 .sublinhar{
     text-decoration: underline;
-}
-
-#section2 img{
-    padding-right: 10px;
-}
-
-.fatec{
-    width: 180px;
-    position: relative;
-    float: left;
 }

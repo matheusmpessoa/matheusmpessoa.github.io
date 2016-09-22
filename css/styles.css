@@ -152,7 +152,7 @@ section {
 
 #home,
 #portfolio {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     font-family: 'Bitter', serif;
 }
@@ -201,6 +201,10 @@ section {
 }
 
 #contato a{
+    color: #fff;
+}
+
+#contato a:hover{
     color: #f44d3c;
 }
 

@@ -193,7 +193,7 @@ section {
 
 #contato {
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #contato h1{
@@ -244,4 +244,16 @@ footer .nav>li>a:hover {
 
 .sublinhar{
     text-decoration: underline;
+}
+
+.alinhar-esq{
+    float: left;
+}
+
+.alinhar-dir{
+    float: right;
+}
+
+.arredondar-img{
+    border-radius: 10px;
 }

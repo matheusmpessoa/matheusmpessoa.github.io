@@ -127,10 +127,10 @@ a.text-danger {
 }
 
 section {
-    padding-top: 10px;
-    padding-bottom: 50px;
-    min-height: 100%;
-    min-height: calc(100% - 0);
+	padding-top:70px;
+    padding-bottom:50px;
+    min-height:100%;
+    min-height:calc(100% - 0);
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;

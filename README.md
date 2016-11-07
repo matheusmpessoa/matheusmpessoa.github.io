@@ -20,8 +20,5 @@ Website contendo informações pessoais e sobre minha carreira profissional.
 
 ### API's utilizadas
 * Font awesome
-
-
-License
-----
-MIT
+* Sweetalert2
+* clipboard.js

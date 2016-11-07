@@ -32,6 +32,20 @@ $('a[href*=#]:not([href=#])').click(function () {
     }
 });
 
-$('.navbar-collapse a').click(function(){
+/* Fechar menu navbar-collapse */
+$('.navbar-collapse a').click(function () {
     $(".navbar-collapse").collapse('hide');
+});
+
+/* Btn sweetalert and copy to clipboard */
+$('.btn-clipboard').on('click', function () {
+    // copying to clipboard
+    var clipboard = new Clipboard('.btn-clipboard');
+
+    // Alert sweetalert
+    swal(
+        '',
+        '<i class="fa fa-sw fa-clipboard"></i> Copiado para a área de transferência!',
+        'success'
+    )
 });

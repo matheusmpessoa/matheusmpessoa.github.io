@@ -10,8 +10,13 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- animate css -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Sweetalert2 -->
+    <link href="//cdn.jsdelivr.net/sweetalert2/6.0.1/sweetalert2.min.css" rel="stylesheet">
 
     <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css">
@@ -49,7 +54,7 @@
                 <a href="#portfolio" class="btn btn-danger btn-lg btn-huge lato" data-toggle="modal" data-target="#myModal">Visitar portfólio</a>
             </p>
         </div>
-        <a href="#portfolio">
+        <a href="#sobre">
             <div class="scroll-down bounceInDown animated">
                 <span>
                     <i class="fa fa-angle-down fa-2x"></i>
@@ -250,6 +255,16 @@
                         </div>
                         <hr>
                         <div class="media">
+                            <h4>Routing AngularJS</h4>
+                            <div class="media-body media-middle">
+                                <p>Sistema de uma página controlada por AngularJS.</p>
+                                <a href="https://matheusmpessoa.github.io/routing-angularjs/#/" class="btn btn-danger btn-sm lato alinhar-esq">Ver aplicação</a>
+                                <br><br>
+                                <a href="https://github.com/matheusmpessoa/routing-angularjs" class="btn btn-danger btn-sm lato alinhar-esq">Ver mais</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="media">
                             <h4>Contact List App</h4>
                             <div class="media-body media-middle">
                                 <p>Sistema de agenda de contatos, criado com a MEAN stack.</p>
@@ -279,7 +294,8 @@
                                 <img src="img/portfolio/cursos/rodrigo-branas.jpg" alt="Logo canal Rodrigo Branas" class="arredondar-img">
                             </div>
                             <div class="media-body media-middle">
-                                <p>Curso do canal Rodrigo Branas. <br>Cursos realizados: Gulp e Grunt.</p>
+                                <p>Curso do canal Rodrigo Branas.
+                                    <br>Cursos realizados: Gulp e Grunt.</p>
                                 <a href="https://github.com/matheusmpessoa/cursos-rodrigobranas" class="btn btn-danger btn-sm lato alinhar-dir">Ver mais</a>
                             </div>
                         </div>
@@ -290,7 +306,8 @@
                                 <img src="img/portfolio/cursos/codedamn.jpg" alt="Logo canal CodeDamn" class="arredondar-img">
                             </div>
                             <div class="media-body media-middle">
-                                <p>Curso do canal CodeDamn. <br>Cursos realizados: AngularJS.</p>
+                                <p>Curso do canal CodeDamn.
+                                    <br>Cursos realizados: AngularJS.</p>
                                 <a href="https://github.com/matheusmpessoa/cursos-codedamn" class="btn btn-danger btn-sm lato alinhar-dir">Ver mais</a>
                             </div>
                         </div>
@@ -301,7 +318,8 @@
                                 <img src="img/portfolio/cursos/udemy.png" alt="Logo canal Udemy" class="arredondar-img">
                             </div>
                             <div class="media-body media-middle">
-                                <p>Curso do canal CodeDamn. <br>Cursos realizados: Angular2 com Bootstrap 4 e TypeScript, WooCommerce. </p>
+                                <p>Curso do canal CodeDamn.
+                                    <br>Cursos realizados: Angular2 com Bootstrap 4 e TypeScript, WooCommerce. </p>
                                 <a href="https://github.com/matheusmpessoa/cursos-udemy" class="btn btn-danger btn-sm lato alinhar-dir">Ver mais</a>
                             </div>
                         </div>
@@ -334,6 +352,9 @@
                         <p>
                             <i class="fa fa-envelope fa-fw"></i>
                             <a href="mailto:#matheusmpessoa17@gmail.com">matheusmpessoa17@gmail.com</a>
+                            <a class="btn btn-md btn-clipboard alinhar-centro" data-clipboard-text="matheusmpessoa17@gmail.com">
+                                <i class="fa fa-clipboard"></i>
+                            </a>
                         </p>
                     </div>
                 </div>
@@ -410,15 +431,13 @@
     <!-- Bootstrap -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-    <!-- Scripts para efeito scroll-up -->
+    <!-- Scripts -->
     <script src="js/scripts.js"></script>
 
     <!-- Clipboard -->
-    <script src="js/componentes/clipboard.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.5/clipboard.min.js"></script>
-    <script>
-        var clipboard = new Clipboard('.btn');
-    </script>
+    <script src="//cdn.jsdelivr.net/clipboard.js/1.5.5/clipboard.min.js"></script>
+    <!-- Sweetalert2 -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.0.1/sweetalert2.js"></script>
 </body>
 
 </html>

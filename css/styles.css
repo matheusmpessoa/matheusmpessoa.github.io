@@ -254,6 +254,10 @@ footer .nav>li>a:hover {
     float: right;
 }
 
+.alinhar-centro{
+    align-content: center;
+}
+
 .arredondar-img{
     border-radius: 10px;
 }

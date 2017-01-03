@@ -20,7 +20,6 @@ $('a[href*=#]:not([href=#])').click(function () {
                 $('.scroll-up').show();
             }
 
-
             // activte animations in this section
             target.find('.animate').delay(1200).addClass("animated");
             setTimeout(function () {
@@ -37,15 +36,28 @@ $('.navbar-collapse a').click(function () {
     $(".navbar-collapse").collapse('hide');
 });
 
-/* Btn sweetalert and copy to clipboard */
-$('.btn-clipboard').on('click', function () {
+/* BtnEmail sweetalert and copy to clipboard */
+$('.btn-clipboardTel').on('click', function () {
     // copying to clipboard
-    var clipboard = new Clipboard('.btn-clipboard');
+    var clipboard = new Clipboard('.btn-clipboardTel');
 
     // Alert sweetalert
     swal(
         '',
-        '<i class="fa fa-sw fa-clipboard"></i> Copiado para a área de transferência!',
+        '<i class="fa fa-sw fa-clipboard"></i> Telefone copiado para a área de transferência!',
+        'success'
+    )
+});
+
+/* BtnEmail sweetalert and copy to clipboard */
+$('.btn-clipboardEmail').on('click', function () {
+    // copying to clipboard
+    var clipboard = new Clipboard('.btn-clipboardEmail');
+
+    // Alert sweetalert
+    swal(
+        '',
+        '<i class="fa fa-sw fa-clipboard"></i> E-mail copiado para a área de transferência!',
         'success'
     )
 });

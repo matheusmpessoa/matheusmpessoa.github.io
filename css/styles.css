@@ -127,10 +127,10 @@ a.text-danger {
 }
 
 section {
-	padding-top:70px;
-    padding-bottom:50px;
-    min-height:100%;
-    min-height:calc(100% - 0);
+    padding-top: 70px;
+    padding-bottom: 50px;
+    min-height: 100%;
+    min-height: calc(100% - 0);
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -149,7 +149,6 @@ section {
     }
 }
 
-
 #home,
 #portfolio {
     background-color: rgba(0, 0, 0, 0.6);
@@ -157,7 +156,7 @@ section {
     font-family: 'Bitter', serif;
 }
 
-.avatar{
+.avatar {
     border-radius: 150px;
 }
 
@@ -165,15 +164,15 @@ section {
     background-color: #fff;
 }
 
-#sobre p{
+#sobre p {
     text-align: justify;
 }
 
-#sobre img{
+#sobre img {
     padding-right: 10px;
 }
 
-.fatec{
+.fatec {
     width: 180px;
     position: relative;
     float: left;
@@ -183,11 +182,11 @@ section {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-#portfolio h1{
+#portfolio h1 {
     color: #f44d3c;
 }
 
-#portfolio h4{
+#portfolio h4 {
     text-decoration: underline;
 }
 
@@ -196,15 +195,15 @@ section {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#contato h1{
+#contato h1 {
     color: #f44d3c;
 }
 
-#contato a{
+#contato a {
     color: #fff;
 }
 
-#contato a:hover{
+#contato a:hover {
     color: #f44d3c;
 }
 
@@ -242,22 +241,22 @@ footer .nav>li>a:hover {
     color: #fff;
 }
 
-.sublinhar{
+.sublinhar {
     text-decoration: underline;
 }
 
-.alinhar-esq{
+.alinhar-esq {
     float: left;
 }
 
-.alinhar-dir{
+.alinhar-dir {
     float: right;
 }
 
-.alinhar-centro{
+.alinhar-centro {
     align-content: center;
 }
 
-.arredondar-img{
+.arredondar-img {
     border-radius: 10px;
 }

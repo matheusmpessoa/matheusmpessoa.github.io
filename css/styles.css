@@ -151,7 +151,7 @@ section {
 
 #home,
 #portfolio {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     font-family: 'Bitter', serif;
 }
@@ -176,6 +176,15 @@ section {
     width: 180px;
     position: relative;
     float: left;
+}
+
+#carreira{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+#carreira h1{
+    color: #f44d3c;
 }
 
 #portfolio {

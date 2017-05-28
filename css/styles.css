@@ -10,20 +10,9 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-@media (min-width:768px) {
-    h1 {
-        font-size: 68px;
-    }
-}
-
-a {
-    color: #888;
-}
-
-a:hover {
-    color: #111;
-}
-
+/* ------------------
+NAV
+------------------ */
 .btn,
 .well,
 .panel {
@@ -92,6 +81,9 @@ a.text-danger {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(100, 100, 100, 0.6);
 }
 
+/* ------------------
+SCROLL
+------------------ */
 .scroll-down {
     position: absolute;
     left: 50%;
@@ -126,31 +118,23 @@ a.text-danger {
     line-height: 30px;
 }
 
+/* ------------------
+SECTION
+------------------ */
 section {
     padding-top: 70px;
     padding-bottom: 50px;
     min-height: 100%;
-    min-height: calc(100% - 0);
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
 
-@media (min-width:768px) {
-    .v-center {
-        height: 50%;
-        overflow: visible;
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-    }
-}
-
-#home,
-#portfolio {
+/* ------------------
+HOME
+------------------ */
+.home,
+.portfolio {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     font-family: 'Bitter', serif;
@@ -160,15 +144,18 @@ section {
     border-radius: 150px;
 }
 
-#sobre {
+/* ------------------
+SOBRE
+------------------ */
+.sobre {
     background-color: #fff;
 }
 
-#sobre p {
+.sobre p {
     text-align: justify;
 }
 
-#sobre img {
+.sobre img {
     padding-right: 10px;
 }
 
@@ -178,45 +165,57 @@ section {
     float: left;
 }
 
-#carreira{
+/* ------------------
+CARREIRA
+------------------ */
+.carreira{
     background-color: rgba(0, 0, 0, 0.3);
     color: #fff;
 }
 
-#carreira h1{
+.carreira h1{
     color: #f44d3c;
 }
 
-#portfolio {
+/* ------------------
+PORTFOLIO
+------------------ */
+.portfolio {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-#portfolio h1 {
+.portfolio h1 {
     color: #f44d3c;
 }
 
-#portfolio h4 {
+.portfolio h4 {
     text-decoration: underline;
 }
 
-#contato {
+/* ------------------
+CONTATO
+------------------ */
+.contato {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#contato h1 {
+.contato h1 {
     color: #f44d3c;
 }
 
-#contato a {
+.contato a {
     color: #fff;
 }
 
-#contato a:hover {
+.contato a:hover {
     color: #f44d3c;
 }
 
-#redesSociais {
+/* ------------------
+REDES SOCIAIS
+------------------ */
+.redesSociais {
     background-color: #f44d3c;
     color: #000;
     min-height: 130px;
@@ -224,14 +223,17 @@ section {
     padding-bottom: 40px;
 }
 
-#redesSociais a {
+.redesSociais a {
     color: #2b2b2b;
 }
 
-#redesSociais a:hover {
+.redesSociais a:hover {
     color: #ddd;
 }
 
+/* ------------------
+FOOTER
+------------------ */
 footer {
     background-color: #2b2b2b;
     color: #ddd;
@@ -250,6 +252,16 @@ footer .nav>li>a:hover {
     color: #fff;
 }
 
+/* ------------------
+ESTILIZAÇÕES GERAIS
+------------------ */
+a {
+    color: #888;
+}
+
+a:hover {
+    color: #111;
+}
 .sublinhar {
     text-decoration: underline;
 }
@@ -268,4 +280,24 @@ footer .nav>li>a:hover {
 
 .arredondar-img {
     border-radius: 10px;
+}
+
+/* ------------------
+MEDIA QUERY
+------------------ */
+@media (min-width:766px) {
+    h1 {
+        font-size: 68px;
+    }
+
+    .v-center {
+        height: 50%;
+        overflow: visible;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
 }

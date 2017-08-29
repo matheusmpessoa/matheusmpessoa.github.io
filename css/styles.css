@@ -18,29 +18,23 @@ NAV
 .panel {
     border-radius: 0;
 }
-
 .btn-danger {
     background-color: #f44d3c;
 }
-
 .text-danger,
 a.text-danger {
     color: #f44d3c;
 }
-
 .btn-huge {
     padding: 17px 22px;
     font-size: 22px;
 }
-
 .lato {
     font-family: 'Lato', sans-serif;
 }
-
 .bitter {
     font-family: 'Bitter', serif;
 }
-
 .icon-bar {
     background-color: #fff;
 }
@@ -50,30 +44,25 @@ a.text-danger {
     color: #cdcdcd;
     border-width: 0;
 }
-
 .navbar-trans .navbar-brand,
 .navbar-trans >.container-fluid .navbar-brand {
     padding: 14px;
     color: #f44d3c;
 }
-
 .navbar-trans li>a:focus,
 .navbar-trans li.active {
     background-color: #f44d3c;
     color: #333;
 }
-
 .navbar-trans li>a:hover {
     background-color: #f44d3c;
     color: #fff;
     opacity: 0.5;
 }
-
 .navbar-trans a {
     color: #cdcdcd;
     letter-spacing: 1px;
 }
-
 .navbar-trans .form-control:focus {
     border-color: #eee;
     outline: 0;
@@ -98,7 +87,6 @@ SCROLL
     text-align: center;
     z-index: -1
 }
-
 .scroll-up {
     position: fixed;
     display: none;
@@ -106,7 +94,6 @@ SCROLL
     bottom: 2em;
     right: 2em;
 }
-
 .scroll-up a {
     background-color: rgba(135, 135, 135, 0.5);
     display: block;
@@ -139,7 +126,6 @@ HOME
     color: #fff;
     font-family: 'Bitter', serif;
 }
-
 .avatar {
     border-radius: 150px;
 }
@@ -150,15 +136,12 @@ SOBRE
 .sobre {
     background-color: #fff;
 }
-
 .sobre p {
     text-align: justify;
 }
-
 .sobre img {
     padding-right: 10px;
 }
-
 .fatec {
     width: 180px;
     position: relative;
@@ -172,7 +155,6 @@ CARREIRA
     background-color: rgba(0, 0, 0, 0.3);
     color: #fff;
 }
-
 .carreira h1{
     color: #f44d3c;
 }
@@ -183,11 +165,9 @@ PORTFOLIO
 .portfolio {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
 .portfolio h1 {
     color: #f44d3c;
 }
-
 .portfolio h4 {
     text-decoration: underline;
 }
@@ -199,15 +179,12 @@ CONTATO
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 .contato h1 {
     color: #f44d3c;
 }
-
 .contato a {
     color: #fff;
 }
-
 .contato a:hover {
     color: #f44d3c;
 }
@@ -222,11 +199,9 @@ REDES SOCIAIS
     padding-top: 40px;
     padding-bottom: 40px;
 }
-
 .redesSociais a {
     color: #2b2b2b;
 }
-
 .redesSociais a:hover {
     color: #ddd;
 }
@@ -241,12 +216,10 @@ footer {
     padding-top: 20px;
     padding-bottom: 40px;
 }
-
 footer .nav>li>a {
     padding: 3px;
     color: #f44d3c;
 }
-
 footer .nav>li>a:hover {
     background-color: transparent;
     color: #fff;
@@ -258,26 +231,15 @@ ESTILIZAÇÕES GERAIS
 a {
     color: #888;
 }
-
 a:hover {
     color: #111;
 }
 .sublinhar {
     text-decoration: underline;
 }
-
-.alinhar-esq {
-    float: left;
-}
-
-.alinhar-dir {
-    float: right;
-}
-
 .alinhar-centro {
     align-content: center;
 }
-
 .arredondar-img {
     border-radius: 10px;
 }

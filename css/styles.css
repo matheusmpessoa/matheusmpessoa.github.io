@@ -171,6 +171,9 @@ PORTFOLIO
 .portfolio h4 {
     text-decoration: underline;
 }
+.portfolio a:hover {
+    color: #f44d3c;
+}
 
 /* ------------------
 CONTATO

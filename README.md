@@ -5,7 +5,7 @@ Website contendo informações pessoais e sobre minha carreira profissional.
 [matheusmpessoa.github.io](http://matheusmpessoa.github.io/#/)
 
 ### Versão
-3.3.0
+3.4.0
 
 ### Linguagens utilizadas
 * HTML5

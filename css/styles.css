@@ -18,8 +18,13 @@ NAV
 .panel {
     border-radius: 0;
 }
-.btn-danger {
-    background-color: #3cad6e;
+.btn-danger,
+.btn-danger.active,
+.btn-danger:active,
+.btn-danger.active.focus,
+.btn-danger:focus,
+.btn-danger:active:hover {
+    background-color: #3cad6e !important;
     border-color: #5af39e;
 }
 .btn-danger:hover {
@@ -144,7 +149,7 @@ HOME
     font-family: 'Bitter', serif;
 }
 .avatar {
-    border-radius: 150px;
+    border-radius: 30px;
 }
 
 /* ------------------
